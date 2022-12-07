@@ -90,8 +90,8 @@ class LLLaplace(ParametricLaplace):
             whether to initialize H, loss, and n_data again; setting to False is useful for
             online learning settings to accumulate a sequential posterior approximation.
         """
-        if not override:
-            raise ValueError('Last-layer Laplace approximations do not support `override=False`.')
+        #if not override:
+        #    raise ValueError('Last-layer Laplace approximations do not support `override=False`.')
 
         self.model.eval()
 
